@@ -48,7 +48,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Capacitor" image="Capacitor" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Capacitor" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,7 +85,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inductor" image="Inductor" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Inductor" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,11 +101,11 @@
                         <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="gbD-N7-gae"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Quiz" image="Quiz" id="z2v-or-sPn"/>
+                    <tabBarItem key="tabBarItem" title="Quiz" id="z2v-or-sPn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7X-Cb-IIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="-476"/>
+            <point key="canvasLocation" x="640.79999999999995" y="-476.31184407796104"/>
         </scene>
         <!--Power-->
         <scene sceneID="6GW-L8-Rsv">
@@ -114,14 +114,25 @@
                     <view key="view" contentMode="scaleToFill" id="377-EJ-CC1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="power.png" translatesAutoresizingMaskIntoConstraints="NO" id="YnG-Wy-9sh">
+                                <rect key="frame" x="38" y="28" width="304" height="253"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.087335813489015451" green="0.18705140934257442" blue="0.20647604697258892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jyA-gM-ZZc" firstAttribute="bottom" secondItem="YnG-Wy-9sh" secondAttribute="bottom" constant="337" id="9P4-OM-ow7"/>
+                            <constraint firstItem="YnG-Wy-9sh" firstAttribute="top" secondItem="jyA-gM-ZZc" secondAttribute="top" constant="8" id="BOa-w9-BZM"/>
+                            <constraint firstItem="YnG-Wy-9sh" firstAttribute="leading" secondItem="jyA-gM-ZZc" secondAttribute="leading" constant="38" id="lw9-xm-zyA"/>
+                            <constraint firstItem="jyA-gM-ZZc" firstAttribute="trailing" secondItem="YnG-Wy-9sh" secondAttribute="trailing" constant="33" id="z4L-v8-IKI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jyA-gM-ZZc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Power" image="Power" id="7ZM-c6-KT8"/>
+                    <tabBarItem key="tabBarItem" title="Power" id="7ZM-c6-KT8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Id3-Iv-LGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="-1191"/>
+            <point key="canvasLocation" x="640.79999999999995" y="-1191.4542728635683"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -146,9 +157,6 @@
     </scenes>
     <resources>
         <image name="001uf-50v-ceramic-capacitors.jpeg" width="300" height="300"/>
-        <image name="Capacitor" width="16" height="16"/>
-        <image name="Inductor" width="16" height="16"/>
-        <image name="Power" width="16" height="16"/>
-        <image name="Quiz" width="16" height="16"/>
+        <image name="power.png" width="505" height="287"/>
     </resources>
 </document>

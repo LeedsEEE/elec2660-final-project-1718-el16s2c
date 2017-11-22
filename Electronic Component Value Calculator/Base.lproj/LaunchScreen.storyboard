@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mpx-99-Qqt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mpx-99-Qqt">
                                 <rect key="frame" x="0.0" y="0.0" width="378" height="667"/>
                             </imageView>
                         </subviews>
@@ -33,7 +33,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1908" y="357.57121439280365"/>
+            <point key="canvasLocation" x="-2110" y="291"/>
         </scene>
     </scenes>
     <resources>

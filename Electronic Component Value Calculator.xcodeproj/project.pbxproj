@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41A99BC91FC48E3C003CA14D /* icons8-capacitor-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A99BC81FC48E3B003CA14D /* icons8-capacitor-50.png */; };
+		41A99BCC1FC4F651003CA14D /* Capacitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A99BCB1FC4F651003CA14D /* Capacitor.m */; };
+		41A99BCF1FC56455003CA14D /* PowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A99BCE1FC56455003CA14D /* PowerViewController.m */; };
+		41A99BD21FC5664C003CA14D /* Power.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A99BD11FC5664C003CA14D /* Power.m */; };
+		41A99BD81FC56FF0003CA14D /* power.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A99BD71FC56FEF003CA14D /* power.png */; };
 		41CED41C1FC2F68D0056C1C3 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41CED41B1FC2F68C0056C1C3 /* 1.jpg */; };
 		41CED45F1FC479E30056C1C3 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41CED45E1FC479E30056C1C3 /* 9.jpg */; };
 		41DB7A361FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41DB7A351FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg */; };
@@ -39,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41A99BC81FC48E3B003CA14D /* icons8-capacitor-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-capacitor-50.png"; sourceTree = "<group>"; };
+		41A99BCA1FC4F651003CA14D /* Capacitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Capacitor.h; sourceTree = "<group>"; };
+		41A99BCB1FC4F651003CA14D /* Capacitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Capacitor.m; sourceTree = "<group>"; };
+		41A99BCD1FC56455003CA14D /* PowerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PowerViewController.h; sourceTree = "<group>"; };
+		41A99BCE1FC56455003CA14D /* PowerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowerViewController.m; sourceTree = "<group>"; };
+		41A99BD01FC5664C003CA14D /* Power.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Power.h; sourceTree = "<group>"; };
+		41A99BD11FC5664C003CA14D /* Power.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Power.m; sourceTree = "<group>"; };
+		41A99BD71FC56FEF003CA14D /* power.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = power.png; sourceTree = "<group>"; };
 		41CED41B1FC2F68C0056C1C3 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		41CED45E1FC479E30056C1C3 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		41DB7A351FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "001uf-50v-ceramic-capacitors.jpeg"; sourceTree = "<group>"; };
@@ -114,13 +127,21 @@
 				41FDCE5F1FBCA50E0013DFC4 /* AppDelegate.m */,
 				41FDCE611FBCA50E0013DFC4 /* FirstViewController.h */,
 				41FDCE621FBCA50E0013DFC4 /* FirstViewController.m */,
+				41A99BCA1FC4F651003CA14D /* Capacitor.h */,
+				41A99BCB1FC4F651003CA14D /* Capacitor.m */,
 				41FDCE641FBCA50E0013DFC4 /* SecondViewController.h */,
 				41FDCE651FBCA50E0013DFC4 /* SecondViewController.m */,
+				41A99BCD1FC56455003CA14D /* PowerViewController.h */,
+				41A99BCE1FC56455003CA14D /* PowerViewController.m */,
+				41A99BD01FC5664C003CA14D /* Power.h */,
+				41A99BD11FC5664C003CA14D /* Power.m */,
 				41FDCE671FBCA50E0013DFC4 /* Main.storyboard */,
 				41FDCE6A1FBCA50E0013DFC4 /* Assets.xcassets */,
 				41DB7A351FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg */,
 				41CED41B1FC2F68C0056C1C3 /* 1.jpg */,
 				41FDCE6C1FBCA50E0013DFC4 /* LaunchScreen.storyboard */,
+				41A99BD71FC56FEF003CA14D /* power.png */,
+				41A99BC81FC48E3B003CA14D /* icons8-capacitor-50.png */,
 				41CED45E1FC479E30056C1C3 /* 9.jpg */,
 				41FDCE6F1FBCA50E0013DFC4 /* Info.plist */,
 				41FDCE701FBCA50E0013DFC4 /* main.m */,
@@ -256,6 +277,8 @@
 				41FDCE6E1FBCA50E0013DFC4 /* LaunchScreen.storyboard in Resources */,
 				41CED41C1FC2F68D0056C1C3 /* 1.jpg in Resources */,
 				41CED45F1FC479E30056C1C3 /* 9.jpg in Resources */,
+				41A99BD81FC56FF0003CA14D /* power.png in Resources */,
+				41A99BC91FC48E3C003CA14D /* icons8-capacitor-50.png in Resources */,
 				41FDCE6B1FBCA50E0013DFC4 /* Assets.xcassets in Resources */,
 				41FDCE691FBCA50E0013DFC4 /* Main.storyboard in Resources */,
 			);
@@ -285,6 +308,9 @@
 				41FDCE661FBCA50E0013DFC4 /* SecondViewController.m in Sources */,
 				41FDCE601FBCA50E0013DFC4 /* AppDelegate.m in Sources */,
 				41FDCE711FBCA50E0013DFC4 /* main.m in Sources */,
+				41A99BD21FC5664C003CA14D /* Power.m in Sources */,
+				41A99BCC1FC4F651003CA14D /* Capacitor.m in Sources */,
+				41A99BCF1FC56455003CA14D /* PowerViewController.m in Sources */,
 				41FDCE631FBCA50E0013DFC4 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
