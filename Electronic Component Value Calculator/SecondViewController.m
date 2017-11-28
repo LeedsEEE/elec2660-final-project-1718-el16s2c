@@ -14,14 +14,26 @@
 
 @implementation SecondViewController
 
+@synthesize num1, num2, answer, operand, theNumber; _dispalyLabel;
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-multiplierPressed = FALSE;
-    firstEntry = NULL;
-    secondEntry = NULL;
-    multiplierOne = NULL;
+    [self setNum1:0];
+    [self setNum2:0];
+
+    [self setOperand:MULTIPLY];
+    [self setAnswer:0.0];
+    [self setTheNumber:@"0"];
+    [self printNumber];
+   
+}
+-(void)printNumber
+{    [_displayLabel setText:theNumber];
+    
+    
     
 }
 
@@ -30,71 +42,96 @@ multiplierPressed = FALSE;
     // Dispose of any resources that can be recreated.
 }
 
-
--(IBAction)colourPressed:(UIButton*)sender;{
-        int tag = sender.tag;
-
-    if (multiplierPressed == FALSE){
-        
-        if (firstEntry == NULL){
-            firstEntry = [NSString stringWithFormat:@"%i",tag];
-            _displayLabel.text = firstEntry;
-        }
-    
-
-else {
-     firstEntry = [NSString stringWithFormat:@"%@%i",firstEntry,tag];
-    _displayLabel.text = firstEntry;
-    
+-(void)saveNum1
+{
+    num1 = [theNumber integerValue];
+    theNumber = @"0";
+    [self printNumber];
 }
-
-}
-    else {
-        if (secondEntry == NULL){
-            secondEntry = [NSString stringWithFormat:@"%i",tag];
-            _displayLabel.text = secondEntry;
-        }
-        else {
-            secondEntry = [NSString stringWithFormat:@"%i",tag];
-            _displayLabel.text = secondEntry;
-        }
-    }
-
-}
-
-- (IBAction)calculate:(id)sender {
-}
-
-- (IBAction)reset:(id)sender {
-    
-    _displayLabel.text == NULL;
-    
+-(void)saveNum2
+{
+    num2 = [theNumber integerValue];
+    theNumber = @"0";
+    [self printNumber];
 }
 
 
 - (IBAction)multiplierOne:(id)sender {
-    multiply = TRUE;
-    if (firstEntry == NULL){
-        secondEntry = [NSString stringWithFormat:@"%i",multiplierOne];
-    }
-        
+    
+    [self saveNum1];
+    operand = MULTIPLY;
     
 }
 
+- (IBAction)press0:(id)sender {
+    theNumber = [theNumber stringByAppendingString:@"0"];
+    [self printNumber];}
+
+- (IBAction)press9:(id)sender {
+    theNumber = [theNumber stringByAppendingString:@"9"];
+    [self printNumber];}
+
+
+- (IBAction)press8:(id)sender {
+    theNumber = [theNumber stringByAppendingString:@"8"];
+    [self printNumber];}
+
+- (IBAction)press7:(id)sender {
+    theNumber = [theNumber stringByAppendingString:@"7"];
+    [self printNumber];}
+
+
+- (IBAction)press6:(id)sender {
+    theNumber = [theNumber stringByAppendingString:@"6"];
+    [self printNumber];}
+
+- (IBAction)press5:(id)sender {
+    theNumber = [theNumber stringByAppendingString:@"5"];
+    [self printNumber];}
+
+- (IBAction)press4:(id)sender {
+    theNumber = [theNumber stringByAppendingString:@"4"];
+    [self printNumber];}
+
+- (IBAction)press3:(id)sender {
+    theNumber = [theNumber stringByAppendingString:@"3"];
+    [self printNumber];}
+
+- (IBAction)press2:(id)sender {
+    theNumber = [theNumber stringByAppendingString:@"2"];
+    [self printNumber];}
+
+- (IBAction)press1:(id)sender {
+    theNumber = [theNumber stringByAppendingString:@"1"];
+    [self printNumber];}
+
+- (IBAction)press1a:(id)sender {
+    theNumber = [theNumber stringByAppendingString:@"1"];
+    [self printNumber];}
+
+- (IBAction)calculate:(id)sender {
+    
+    num2 = [ theNumber integerValue];
+    if ( operand == MULTIPLY)
+        answer = ((num1,num2)*1);
+}
+
+    
+- (IBAction)reset:(id)sender {
+
+}
+
 - (IBAction)multiplierTwo:(id)sender {
-    multiply = TRUE;
+    
 }
-
-
 - (IBAction)multiplierThree:(id)sender {
-    multiply = TRUE;
+    
 }
-
 - (IBAction)multiplierFour:(id)sender {
-    multiply = TRUE;
+    
+}
+- (IBAction)multiplierFive:(id)sender {
+
 }
 
-- (IBAction)multiplierFive:(id)sender {
-    multiply = TRUE;
-}
 @end

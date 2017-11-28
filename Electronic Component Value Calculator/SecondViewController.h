@@ -7,14 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#define MULTIPLY 2
 
 @interface SecondViewController : UIViewController
 
-{bool multiplierPressed;
-    bool multiply;
-    NSString *firstEntry;
-    NSString *secondEntry;
-    NSString *multiplierOne;
+{
+    NSInteger num1;
+    NSInteger num2;
+    NSInteger num3; // multiplyer
+    
+    double answer;
+    NSInteger operand;
+    NSString * theNumber;
+    IBOutlet UILabel *displayLabel;
+    
 }
 
 @property (weak, nonatomic) IBOutlet UIImageView *image;
@@ -25,12 +31,18 @@
 - (IBAction)multiplierFour:(id)sender;
 - (IBAction)multiplierFive:(id)sender;
 
+@property NSString *theNumber;
+@property NSInteger num1;
+@property NSInteger num2;
+@property double answer;
+@property NSInteger operand;
+
 @property (weak, nonatomic) IBOutlet UILabel *displayLabel;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *inductorLabel;
 @property (weak, nonatomic) IBOutlet UILabel *name;
-
--(IBAction)colourPressed:(UIButton*)sender;
+- (IBAction)press9:(id)sender;
 
 - (IBAction)calculate:(id)sender;
 - (IBAction)reset:(id)sender;
