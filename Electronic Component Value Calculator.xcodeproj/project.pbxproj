@@ -13,6 +13,7 @@
 		41A99BCF1FC56455003CA14D /* PowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A99BCE1FC56455003CA14D /* PowerViewController.m */; };
 		41A99BD81FC56FF0003CA14D /* power.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A99BD71FC56FEF003CA14D /* power.png */; };
 		41C1185C1FCDE8EB007958BE /* Question1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C1185B1FCDE8EB007958BE /* Question1ViewController.m */; };
+		41C118601FD0D743007958BE /* quiz-background-with-hand-holding-a-sign_23-2147593100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41C1185F1FD0D741007958BE /* quiz-background-with-hand-holding-a-sign_23-2147593100.jpg */; };
 		41CED41C1FC2F68D0056C1C3 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41CED41B1FC2F68C0056C1C3 /* 1.jpg */; };
 		41CED45F1FC479E30056C1C3 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41CED45E1FC479E30056C1C3 /* 9.jpg */; };
 		41DB7A361FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41DB7A351FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg */; };
@@ -54,6 +55,7 @@
 		41A99BD71FC56FEF003CA14D /* power.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = power.png; sourceTree = "<group>"; };
 		41C1185A1FCDE8EB007958BE /* Question1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question1ViewController.h; sourceTree = "<group>"; };
 		41C1185B1FCDE8EB007958BE /* Question1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question1ViewController.m; sourceTree = "<group>"; };
+		41C1185F1FD0D741007958BE /* quiz-background-with-hand-holding-a-sign_23-2147593100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "quiz-background-with-hand-holding-a-sign_23-2147593100.jpg"; sourceTree = "<group>"; };
 		41CED41B1FC2F68C0056C1C3 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		41CED45E1FC479E30056C1C3 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		41DB7A351FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "001uf-50v-ceramic-capacitors.jpeg"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				41DB7A351FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg */,
 				41CED41B1FC2F68C0056C1C3 /* 1.jpg */,
 				41FDCE6C1FBCA50E0013DFC4 /* LaunchScreen.storyboard */,
+				41C1185F1FD0D741007958BE /* quiz-background-with-hand-holding-a-sign_23-2147593100.jpg */,
 				41A99BD71FC56FEF003CA14D /* power.png */,
 				410753511FCB1EAE007312D4 /* FRHDMDSH2WETZLI.MEDIUM.jpg */,
 				41A99BC81FC48E3B003CA14D /* icons8-capacitor-50.png */,
@@ -281,6 +284,7 @@
 				41CED41C1FC2F68D0056C1C3 /* 1.jpg in Resources */,
 				41CED45F1FC479E30056C1C3 /* 9.jpg in Resources */,
 				41A99BD81FC56FF0003CA14D /* power.png in Resources */,
+				41C118601FD0D743007958BE /* quiz-background-with-hand-holding-a-sign_23-2147593100.jpg in Resources */,
 				410753521FCB1EAF007312D4 /* FRHDMDSH2WETZLI.MEDIUM.jpg in Resources */,
 				41A99BC91FC48E3C003CA14D /* icons8-capacitor-50.png in Resources */,
 				41FDCE6B1FBCA50E0013DFC4 /* Assets.xcassets in Resources */,
