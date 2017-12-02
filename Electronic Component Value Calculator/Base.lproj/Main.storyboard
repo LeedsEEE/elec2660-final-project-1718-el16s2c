@@ -797,7 +797,7 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="adK-8o-n2a" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="K6m-K3-gyy"/>
+                                    <segue destination="adK-8o-n2a" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="K6m-K3-gyy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmM-ZN-iyk">
@@ -918,7 +918,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="tKt-Q6-x19" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Ll0-ky-W7Y"/>
+                                    <segue destination="tKt-Q6-x19" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="Ll0-ky-W7Y"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -951,7 +951,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="ec1-w2-PbK" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="fwn-5U-Lf4"/>
+                                    <segue destination="ec1-w2-PbK" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="fwn-5U-Lf4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -984,7 +984,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="gFG-UF-U56" kind="show" id="Z9f-Tq-NDP"/>
+                                    <segue destination="gFG-UF-U56" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Z9f-Tq-NDP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1253,6 +1253,7 @@
         <image name="quiz-background-with-hand-holding-a-sign_23-2147593100.jpg" width="626" height="626"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="K6m-K3-gyy"/>
         <segue reference="usd-Y0-rxL"/>
     </inferredMetricsTieBreakers>
 </document>
