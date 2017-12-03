@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+#import <AVFoundation/AVFoundation.h>
+
 @interface Question1ViewController : UIViewController
+
+
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel1;
+
+@property (weak,nonatomic) IBOutlet UILabel  *Answer;
 
 @end
