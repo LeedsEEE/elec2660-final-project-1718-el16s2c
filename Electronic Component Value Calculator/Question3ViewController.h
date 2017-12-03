@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <AVFoundation/AVFoundation.h>
 @interface Question3ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *questionLabe2;
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel21;
+
+@property (weak,nonatomic) IBOutlet UILabel  *Answer2;
+@property (weak, nonatomic) IBOutlet UIImageView *image;
 @end

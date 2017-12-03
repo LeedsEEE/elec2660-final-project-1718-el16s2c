@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		410753521FCB1EAF007312D4 /* FRHDMDSH2WETZLI.MEDIUM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 410753511FCB1EAE007312D4 /* FRHDMDSH2WETZLI.MEDIUM.jpg */; };
+		412986E11FD459B90005353A /* quizRLC.png in Resources */ = {isa = PBXBuildFile; fileRef = 412986E01FD459B60005353A /* quizRLC.png */; };
+		412986EB1FD46D450005353A /* QuidRLC2.png in Resources */ = {isa = PBXBuildFile; fileRef = 412986EA1FD46D420005353A /* QuidRLC2.png */; };
+		412986ED1FD485820005353A /* CurrentWave1.png in Resources */ = {isa = PBXBuildFile; fileRef = 412986EC1FD4857F0005353A /* CurrentWave1.png */; };
+		412986EF1FD485CF0005353A /* CurrentWave2.png in Resources */ = {isa = PBXBuildFile; fileRef = 412986EE1FD485C90005353A /* CurrentWave2.png */; };
+		412986F11FD485EE0005353A /* CurrentWave3.png in Resources */ = {isa = PBXBuildFile; fileRef = 412986F01FD485EB0005353A /* CurrentWave3.png */; };
+		412986F31FD4865B0005353A /* CurrentWave4.png in Resources */ = {isa = PBXBuildFile; fileRef = 412986F21FD486560005353A /* CurrentWave4.png */; };
 		41A99BC91FC48E3C003CA14D /* icons8-capacitor-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A99BC81FC48E3B003CA14D /* icons8-capacitor-50.png */; };
 		41A99BCC1FC4F651003CA14D /* Capacitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A99BCB1FC4F651003CA14D /* Capacitor.m */; };
 		41A99BCF1FC56455003CA14D /* PowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A99BCE1FC56455003CA14D /* PowerViewController.m */; };
@@ -55,6 +61,12 @@
 
 /* Begin PBXFileReference section */
 		410753511FCB1EAE007312D4 /* FRHDMDSH2WETZLI.MEDIUM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FRHDMDSH2WETZLI.MEDIUM.jpg; sourceTree = "<group>"; };
+		412986E01FD459B60005353A /* quizRLC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quizRLC.png; sourceTree = "<group>"; };
+		412986EA1FD46D420005353A /* QuidRLC2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuidRLC2.png; sourceTree = "<group>"; };
+		412986EC1FD4857F0005353A /* CurrentWave1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CurrentWave1.png; sourceTree = "<group>"; };
+		412986EE1FD485C90005353A /* CurrentWave2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CurrentWave2.png; sourceTree = "<group>"; };
+		412986F01FD485EB0005353A /* CurrentWave3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CurrentWave3.png; sourceTree = "<group>"; };
+		412986F21FD486560005353A /* CurrentWave4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CurrentWave4.png; sourceTree = "<group>"; };
 		41A99BC81FC48E3B003CA14D /* icons8-capacitor-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-capacitor-50.png"; sourceTree = "<group>"; };
 		41A99BCA1FC4F651003CA14D /* Capacitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Capacitor.h; sourceTree = "<group>"; };
 		41A99BCB1FC4F651003CA14D /* Capacitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Capacitor.m; sourceTree = "<group>"; };
@@ -184,6 +196,12 @@
 				41DB7A351FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg */,
 				41CED41B1FC2F68C0056C1C3 /* 1.jpg */,
 				41FDCE6C1FBCA50E0013DFC4 /* LaunchScreen.storyboard */,
+				412986E01FD459B60005353A /* quizRLC.png */,
+				412986EA1FD46D420005353A /* QuidRLC2.png */,
+				412986F01FD485EB0005353A /* CurrentWave3.png */,
+				412986EE1FD485C90005353A /* CurrentWave2.png */,
+				412986EC1FD4857F0005353A /* CurrentWave1.png */,
+				412986F21FD486560005353A /* CurrentWave4.png */,
 				41C118701FD33BB4007958BE /* Wrong Buzzer.wav */,
 				41C118721FD33C20007958BE /* Wrong Buzzer1.wav */,
 				41C118651FD32340007958BE /* Correct.wav */,
@@ -325,16 +343,22 @@
 			files = (
 				41DB7A361FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg in Resources */,
 				41FDCE6E1FBCA50E0013DFC4 /* LaunchScreen.storyboard in Resources */,
+				412986F31FD4865B0005353A /* CurrentWave4.png in Resources */,
 				41CED41C1FC2F68D0056C1C3 /* 1.jpg in Resources */,
+				412986F11FD485EE0005353A /* CurrentWave3.png in Resources */,
 				41CED45F1FC479E30056C1C3 /* 9.jpg in Resources */,
+				412986EF1FD485CF0005353A /* CurrentWave2.png in Resources */,
 				41A99BD81FC56FF0003CA14D /* power.png in Resources */,
+				412986E11FD459B90005353A /* quizRLC.png in Resources */,
 				41C118601FD0D743007958BE /* quiz-background-with-hand-holding-a-sign_23-2147593100.jpg in Resources */,
 				41C1186F1FD33A4C007958BE /* 351566__bertrof__game-sound-correct-organic-violin.wav in Resources */,
+				412986ED1FD485820005353A /* CurrentWave1.png in Resources */,
 				410753521FCB1EAF007312D4 /* FRHDMDSH2WETZLI.MEDIUM.jpg in Resources */,
 				41A99BC91FC48E3C003CA14D /* icons8-capacitor-50.png in Resources */,
 				41C118661FD32341007958BE /* Correct.wav in Resources */,
 				41FDCE6B1FBCA50E0013DFC4 /* Assets.xcassets in Resources */,
 				41FDCE691FBCA50E0013DFC4 /* Main.storyboard in Resources */,
+				412986EB1FD46D450005353A /* QuidRLC2.png in Resources */,
 				41C118731FD33C20007958BE /* Wrong Buzzer1.wav in Resources */,
 				41C118711FD33BB4007958BE /* Wrong Buzzer.wav in Resources */,
 			);
