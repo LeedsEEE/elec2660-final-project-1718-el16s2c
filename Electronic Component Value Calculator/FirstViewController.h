@@ -10,10 +10,21 @@
 
 @interface FirstViewController : UIViewController
 
-- (IBAction)textOne:(UITextField *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *textOne;
+
 @property (weak, nonatomic) IBOutlet UITextField *textTwo;
+@property (weak, nonatomic) IBOutlet UITextField *textThree;
+@property (weak, nonatomic) IBOutlet UITextField *textFour;
+
 @property (weak, nonatomic) IBOutlet UILabel *capacitor;
 @property (weak, nonatomic) IBOutlet UILabel *pico;
+@property (weak, nonatomic) IBOutlet UILabel *nano;
+@property (weak, nonatomic) IBOutlet UILabel *micro;
+
+@property (weak, nonatomic) IBOutlet UIImageView *capacitorImage;
+
+
+
 
 @end
 

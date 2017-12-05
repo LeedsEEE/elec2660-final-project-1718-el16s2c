@@ -83,7 +83,7 @@
     
     double current  =  self.I = [self.Current.text doubleValue];
     double reactance   =  self.X = [self.Reactance.text doubleValue];
-    double impedande =  self.Z = [self.Impedance.text doubleValue];
+    double impedance =  self.Z = [self.Impedance.text doubleValue];
     double resistance =  self.R = [self.Resistance.text doubleValue];
     
 

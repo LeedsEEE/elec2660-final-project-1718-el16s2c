@@ -7,22 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#define MULTIPLY 2
+typedef enum {MULTIPLY} Multiplier;
 
 @interface SecondViewController : UIViewController
 
 {
-    NSInteger num1;
-    NSInteger num2;
-    NSInteger num3; // multiplyer
+    IBOutlet UITextField *display;
+    NSString *storage;
+    NSString *secondNumber;
+    Multiplier multiply;
     
-    double answer;
-    NSInteger operand;
-    NSString * theNumber;
-    IBOutlet UILabel *displayLabel;
     
 }
-
+@property UIButton *Clear;
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 
 - (IBAction)multiplierOne:(id)sender;
@@ -31,22 +28,10 @@
 - (IBAction)multiplierFour:(id)sender;
 - (IBAction)multiplierFive:(id)sender;
 
-@property NSString *theNumber;
-@property NSInteger num1;
-@property NSInteger num2;
-@property double answer;
-@property NSInteger operand;
-
-@property (weak, nonatomic) IBOutlet UILabel *displayLabel;
 
 
 @property (weak, nonatomic) IBOutlet UILabel *inductorLabel;
 @property (weak, nonatomic) IBOutlet UILabel *name;
-- (IBAction)press9:(id)sender;
-
-- (IBAction)calculate:(id)sender;
-- (IBAction)reset:(id)sender;
-
 
 
 

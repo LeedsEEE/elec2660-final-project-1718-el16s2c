@@ -32,13 +32,9 @@
 }
 
 
-
-
-
-
-- (IBAction)textOne:(UITextField *)sender {
+- (IBAction)Calculate:(id)sender {
     
-    NSString *str = sender.text;
+    NSString *str = _textOne.text;
     NSString *value = [str substringWithRange:NSMakeRange(0,2)];
     
     NSString * multiplier= [str substringWithRange:NSMakeRange(2,1)];
@@ -99,13 +95,22 @@
     }
     
     
-    
-    
     float result = NumberValue*MultiplierNumber;
-    self.textTwo.text = [NSString stringWithFormat:@"%f",result];
-    
-    
-    
+    self.textTwo.text = [NSString stringWithFormat:@"%.4f",result];
+    float result2 = result/1000;
+    self.textThree.text = [NSString stringWithFormat:@"%.4f",result2];
+    float result3 = result2/1000;
+    self.textFour.text = [NSString stringWithFormat:@"%f",result3];
+    }
+
+- (IBAction)Reset:(id)sender {
+    self.textOne.text = NULL;
+    self.textTwo.text = NULL;
+    self.textThree.text = NULL;
+    self.textFour.text = NULL;
     
 }
+
+
+
 @end

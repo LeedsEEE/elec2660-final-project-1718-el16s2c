@@ -10,9 +10,18 @@
 #import <AVFoundation/AVFoundation.h>
 @interface Question3ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *questionLabe2;
-@property (weak, nonatomic) IBOutlet UILabel *questionLabel21;
+@property (weak, nonatomic) IBOutlet UILabel *questionLabe3;
+@property (weak, nonatomic) IBOutlet UILabel *A;
+@property (weak, nonatomic) IBOutlet UILabel *B;
+@property (weak, nonatomic) IBOutlet UILabel *C;
+@property (weak, nonatomic) IBOutlet UILabel *D;
 
-@property (weak,nonatomic) IBOutlet UILabel  *Answer2;
-@property (weak, nonatomic) IBOutlet UIImageView *image;
+
+
+
+@property (weak,nonatomic) IBOutlet UILabel  *Answer3;
+@property (weak, nonatomic) IBOutlet UIImageView *image31;
+@property (weak, nonatomic) IBOutlet UIImageView *image32;
+@property (weak, nonatomic) IBOutlet UIImageView *image33;
+@property (weak, nonatomic) IBOutlet UIImageView *image34;
 @end

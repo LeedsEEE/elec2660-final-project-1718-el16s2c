@@ -14,124 +14,173 @@
 
 @implementation SecondViewController
 
-@synthesize num1, num2, answer, operand, theNumber; _dispalyLabel;
+
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib
+}
+// 1st band
+- (IBAction)Black:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@0",display.text];
+}
 
-    [self setNum1:0];
-    [self setNum2:0];
+- (IBAction)Brown:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@1",display.text];
+}
 
-    [self setOperand:MULTIPLY];
-    [self setAnswer:0.0];
-    [self setTheNumber:@"0"];
-    [self printNumber];
+
+- (IBAction)Red:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@2",display.text];
+}
+
+- (IBAction)Orange:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@3",display.text];
+    
+}
+
+- (IBAction)Yellow:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@4",display.text];
+}
+
+- (IBAction)Green:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@5",display.text];
+}
+
+- (IBAction)Blue:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@6",display.text];
+}
+
+- (IBAction)Violet:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@7",display.text];
+}
+
+- (IBAction)Grey:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@8",display.text];
+}
+
+- (IBAction)White:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@9",display.text];
+}
+
+
+// 2nd band
+- (IBAction)Black1:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@0",display.text];
+}
+
+- (IBAction)Brown1:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@1",display.text];
+}
+
+
+- (IBAction)Red1:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@2",display.text];
+}
+
+- (IBAction)Orange1:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@3",display.text];
+    
+}
+
+- (IBAction)Yellow1:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@4",display.text];
+}
+
+- (IBAction)Green1:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@5",display.text];
+}
+
+- (IBAction)Blue1:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@6",display.text];
+}
+
+- (IBAction)Violet1:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@7",display.text];
+}
+
+- (IBAction)Grey1:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@8",display.text];
+}
+
+- (IBAction)White1:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@9",display.text];
+}
+
+
+//multipliers
+
+- (IBAction)multiplierOne:(id)sender{
+      display.text = [NSString stringWithFormat:@"%@μH",display.text];
+    
+}
+- (IBAction)multiplierTwo:(id)sender{
+     display.text = [NSString stringWithFormat:@"%@00μH",display.text];
+}
+
+- (IBAction)multiplierThree:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@000μH",display.text];
+    
+}
+- (IBAction)multiplierFour:(id)sender {
+   display.text = [NSString stringWithFormat:@"%@0000μH",display.text];
+    
+}
+- (IBAction)multiplierFive:(id)sender {
+   display.text = [NSString stringWithFormat:@"%@00000μH",display.text];
+}
+
+//tolerance
+- (IBAction)tolerance1:(id)sender {
+     display.text = [NSString stringWithFormat:@"%@±20%%",display.text];
+}
+
+- (IBAction)tolerance2:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@±1%%",display.text];
+}
+
+- (IBAction)tolerance3:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@±2%%",display.text];
+}
+
+- (IBAction)tolerance4:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@±3%%",display.text];
+}
+
+
+- (IBAction)tolerance5:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@±4%%",display.text];
+}
+
+
+- (IBAction)tolerance6:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@±20%%",display.text];
+}
+
+- (IBAction)tolerance7:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@±5%%",display.text];
+}
+
+- (IBAction)tolerance8:(id)sender {
+    display.text = [NSString stringWithFormat:@"%@±10%%",display.text];
+}
+
+
+// reset
+
+- (IBAction)Clear:(id)sender {
+    display.text = @"";
    
+    _Clear.layer.cornerRadius = 5;//need changing
+    _Clear.clipsToBounds = true;
 }
--(void)printNumber
-{    [_displayLabel setText:theNumber];
-    
-    
-    
-}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
--(void)saveNum1
-{
-    num1 = [theNumber integerValue];
-    theNumber = @"0";
-    [self printNumber];
-}
--(void)saveNum2
-{
-    num2 = [theNumber integerValue];
-    theNumber = @"0";
-    [self printNumber];
-}
-
-
-- (IBAction)multiplierOne:(id)sender {
-    
-    [self saveNum1];
-    operand = MULTIPLY;
-    
-}
-
-- (IBAction)press0:(id)sender {
-    theNumber = [theNumber stringByAppendingString:@"0"];
-    [self printNumber];}
-
-- (IBAction)press9:(id)sender {
-    theNumber = [theNumber stringByAppendingString:@"9"];
-    [self printNumber];}
-
-
-- (IBAction)press8:(id)sender {
-    theNumber = [theNumber stringByAppendingString:@"8"];
-    [self printNumber];}
-
-- (IBAction)press7:(id)sender {
-    theNumber = [theNumber stringByAppendingString:@"7"];
-    [self printNumber];}
-
-
-- (IBAction)press6:(id)sender {
-    theNumber = [theNumber stringByAppendingString:@"6"];
-    [self printNumber];}
-
-- (IBAction)press5:(id)sender {
-    theNumber = [theNumber stringByAppendingString:@"5"];
-    [self printNumber];}
-
-- (IBAction)press4:(id)sender {
-    theNumber = [theNumber stringByAppendingString:@"4"];
-    [self printNumber];}
-
-- (IBAction)press3:(id)sender {
-    theNumber = [theNumber stringByAppendingString:@"3"];
-    [self printNumber];}
-
-- (IBAction)press2:(id)sender {
-    theNumber = [theNumber stringByAppendingString:@"2"];
-    [self printNumber];}
-
-- (IBAction)press1:(id)sender {
-    theNumber = [theNumber stringByAppendingString:@"1"];
-    [self printNumber];}
-
-- (IBAction)press1a:(id)sender {
-    theNumber = [theNumber stringByAppendingString:@"1"];
-    [self printNumber];}
-
-- (IBAction)calculate:(id)sender {
-    
-    num2 = [ theNumber integerValue];
-    if ( operand == MULTIPLY)
-        answer = ((num1,num2)*1);
-}
-
-    
-- (IBAction)reset:(id)sender {
-
-}
-
-- (IBAction)multiplierTwo:(id)sender {
-    
-}
-- (IBAction)multiplierThree:(id)sender {
-    
-}
-- (IBAction)multiplierFour:(id)sender {
-    
-}
-- (IBAction)multiplierFive:(id)sender {
-
 }
 
 @end

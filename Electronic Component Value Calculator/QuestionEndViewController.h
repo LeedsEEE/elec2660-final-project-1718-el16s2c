@@ -10,4 +10,11 @@
 
 @interface QuestionEndViewController : UIViewController
 
+
+@property (weak, nonatomic) IBOutlet UILabel *welldone;
+
+@property (weak, nonatomic) IBOutlet UILabel *endLabel;
+@property (weak, nonatomic) IBOutlet UILabel *endLabel1;
+
+
 @end

@@ -23,12 +23,12 @@
     // Do any additional setup after loading the view.
     
     NSString *path3 = [NSString stringWithFormat:@"%@/Wrong Buzzer1.wav", [[NSBundle mainBundle] resourcePath] ];
-    NSURL *soundUrl31 = [NSURL fileURLWithPath:path3];
-    _audioPlayer3 = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl31 error:nil];
+    NSURL *soundUrl3 = [NSURL fileURLWithPath:path3];
+    _audioPlayer3 = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl3 error:nil];
     
     NSString *pathThree = [NSString stringWithFormat:@"%@/Correct.wav", [[NSBundle mainBundle] resourcePath] ];
-    NSURL *soundUrl21 = [NSURL fileURLWithPath:pathThree];
-    _audioPlayer31 = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl21 error:nil];
+    NSURL *soundUrl31 = [NSURL fileURLWithPath:pathThree];
+    _audioPlayer31 = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl31 error:nil];
 }
 
 
@@ -39,24 +39,24 @@
 }
 
 
--(IBAction)buttonA2:(id)sender{
-    _Answer2.text = @"Wrong! Answer";
-    _Answer2.textColor = [UIColor redColor];
+-(IBAction)buttonA3:(id)sender{
+    _Answer3.text = @"Wrong! Answer";
+    _Answer3.textColor = [UIColor redColor];
     [_audioPlayer3 play];
 }
--(IBAction)buttonB2:(id)sender{
-    _Answer2.text = @"Wrong! Answer";
-    _Answer2.textColor = [UIColor redColor];
-    [_audioPlayer3 play];
-}
--(IBAction)buttonC2:(id)sender{
-    _Answer2.text = @"Correct! Answer";
-    _Answer2.textColor = [UIColor blueColor];
+-(IBAction)buttonB3:(id)sender{
+    _Answer3.text = @"Correct! Answer";
+    _Answer3.textColor = [UIColor blueColor];
     [_audioPlayer31 play];
 }
--(IBAction)buttonD2:(id)sender{
-    _Answer2.text = @"Wrong! Answer";
-    _Answer2.textColor = [UIColor redColor];
+-(IBAction)buttonC3:(id)sender{
+    _Answer3.text = @"Wrong! Answer";
+    _Answer3.textColor = [UIColor redColor];
+    [_audioPlayer3 play];
+}
+-(IBAction)buttonD3:(id)sender{
+    _Answer3.text = @"Wrong! Answer";
+    _Answer3.textColor = [UIColor redColor];
     [_audioPlayer3 play];
 }
 /*
