@@ -43,8 +43,13 @@
     int NumberValue = [value intValue];
     float MultiplierNumber = [multiplier intValue];
     
+   
     
     NSLog(@"%@", [NSString stringWithFormat:@"value = %ld, multiplier = %ld", (long)NumberValue, (long)MultiplierNumber]);
+
+    
+
+
     
     
     if (MultiplierNumber == 0)
@@ -102,6 +107,10 @@
     float result3 = result2/1000;
     self.textFour.text = [NSString stringWithFormat:@"%f",result3];
     }
+
+
+
+
 
 - (IBAction)Reset:(id)sender {
     self.textOne.text = NULL;
