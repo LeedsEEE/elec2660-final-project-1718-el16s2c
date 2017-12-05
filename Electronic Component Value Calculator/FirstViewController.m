@@ -22,10 +22,6 @@
   
 }
 
-
-
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -35,6 +31,11 @@
 - (IBAction)Calculate:(id)sender {
     
     NSString *str = _textOne.text;
+    
+    if([str length] == 0) {
+        return;
+    }
+    
     NSString *value = [str substringWithRange:NSMakeRange(0,2)];
     
     NSString * multiplier= [str substringWithRange:NSMakeRange(2,1)];
@@ -47,10 +48,6 @@
     
     NSLog(@"%@", [NSString stringWithFormat:@"value = %ld, multiplier = %ld", (long)NumberValue, (long)MultiplierNumber]);
 
-    
-
-
-    
     
     if (MultiplierNumber == 0)
     {
@@ -107,9 +104,6 @@
     float result3 = result2/1000;
     self.textFour.text = [NSString stringWithFormat:@"%f",result3];
     }
-
-
-
 
 
 - (IBAction)Reset:(id)sender {
