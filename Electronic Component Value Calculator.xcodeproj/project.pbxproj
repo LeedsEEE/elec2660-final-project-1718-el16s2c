@@ -144,6 +144,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41339A751FD8316900DD145B /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				41B5F2E11FD75CCA002ED31E /* icons8-capacitor-32-2.png */,
+				41B5F2E31FD75D76002ED31E /* icons power.png */,
+				41B5F2E51FD75E11002ED31E /* icons quiz.png */,
+				41B5F2E91FD7669E002ED31E /* icons8-Oscillator-30.png */,
+			);
+			name = "App Icons";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		41C118671FD3332D007958BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,17 +214,14 @@
 				41DB7A351FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg */,
 				41CED41B1FC2F68C0056C1C3 /* 1.jpg */,
 				41FDCE6C1FBCA50E0013DFC4 /* LaunchScreen.storyboard */,
+				41339A751FD8316900DD145B /* App Icons */,
 				412986E01FD459B60005353A /* quizRLC.png */,
 				412986EA1FD46D420005353A /* QuidRLC2.png */,
 				412986F01FD485EB0005353A /* CurrentWave3.png */,
-				41B5F2E91FD7669E002ED31E /* icons8-Oscillator-30.png */,
 				412986EE1FD485C90005353A /* CurrentWave2.png */,
-				41B5F2E11FD75CCA002ED31E /* icons8-capacitor-32-2.png */,
 				412986EC1FD4857F0005353A /* CurrentWave1.png */,
-				41B5F2E31FD75D76002ED31E /* icons power.png */,
 				412986F21FD486560005353A /* CurrentWave4.png */,
 				41C118701FD33BB4007958BE /* Wrong Buzzer.wav */,
-				41B5F2E51FD75E11002ED31E /* icons quiz.png */,
 				41C118721FD33C20007958BE /* Wrong Buzzer1.wav */,
 				41C118651FD32340007958BE /* Correct.wav */,
 				41C1185F1FD0D741007958BE /* quiz-background-with-hand-holding-a-sign_23-2147593100.jpg */,
