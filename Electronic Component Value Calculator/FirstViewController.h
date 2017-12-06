@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *micro;
 
 @property (weak, nonatomic) IBOutlet UIImageView *capacitorImage;
+- (IBAction)Reset:(id)sender;
+
 
 
 

@@ -41,6 +41,7 @@
     _Answer.text = @"Wrong! Answer";
     _Answer.textColor = [UIColor redColor];
     [_audioPlayer play];
+    
 }
 -(IBAction)buttonB:(id)sender{
     _Answer.text = @"Wrong! Answer";

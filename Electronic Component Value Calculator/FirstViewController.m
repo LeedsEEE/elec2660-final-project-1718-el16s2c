@@ -38,7 +38,7 @@
     
     NSString *value = [str substringWithRange:NSMakeRange(0,2)];
     
-    NSString * multiplier= [str substringWithRange:NSMakeRange(2,1)];
+    NSString *multiplier= [str substringWithRange:NSMakeRange(2,1)];
     
     
     int NumberValue = [value intValue];
@@ -107,6 +107,8 @@
 
 
 - (IBAction)Reset:(id)sender {
+    //self.Reset.layer.cornerRadius = 5.0 ;
+ 
     self.textOne.text = NULL;
     self.textTwo.text = NULL;
     self.textThree.text = NULL;
