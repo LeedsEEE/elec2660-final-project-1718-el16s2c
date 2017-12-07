@@ -898,19 +898,9 @@
                                     <segue destination="Uzo-8A-36W" kind="show" id="NYU-BE-ea3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmM-ZN-iyk">
-                                <rect key="frame" x="57" y="321" width="160" height="24"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="B. Inductor run motor."/>
-                                <connections>
-                                    <action selector="buttonB:" destination="TYp-nB-tVK" eventType="touchUpInside" id="mD7-qG-PSR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWd-P4-zak">
                                 <rect key="frame" x="57" y="366" width="169" height="24"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.37152183220000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="Mtl-81-Hje"/>
                                 </constraints>
@@ -937,8 +927,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMK-x8-njU">
-                                <rect key="frame" x="57" y="409" width="160" height="24"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="57" y="409" width="169" height="24"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.37152183220000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="D. Shaded pole motor."/>
@@ -992,6 +982,16 @@
                                     <segue destination="49e-Tb-3d3" kind="show" id="cz1-LA-LvN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmM-ZN-iyk">
+                                <rect key="frame" x="57" y="320" width="169" height="25"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.37152183219178081" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="B. Inductor run motor."/>
+                                <connections>
+                                    <action selector="buttonB:" destination="TYp-nB-tVK" eventType="touchUpInside" id="mD7-qG-PSR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1013,7 +1013,7 @@
                             <constraint firstItem="vWd-Q7-3U7" firstAttribute="bottom" secondItem="PMK-x8-njU" secondAttribute="bottom" constant="234" id="Sbc-LJ-cEn"/>
                             <constraint firstItem="Qg5-dk-qf0" firstAttribute="baseline" secondItem="590-oN-gHK" secondAttribute="baseline" id="UhC-U1-8iE"/>
                             <constraint firstItem="vWd-Q7-3U7" firstAttribute="trailing" secondItem="590-oN-gHK" secondAttribute="trailing" constant="29" id="WAD-qd-nAw"/>
-                            <constraint firstItem="qWd-P4-zak" firstAttribute="trailing" secondItem="PMK-x8-njU" secondAttribute="trailing" constant="9" id="WN2-gx-UdK"/>
+                            <constraint firstItem="qWd-P4-zak" firstAttribute="trailing" secondItem="PMK-x8-njU" secondAttribute="trailing" id="WN2-gx-UdK"/>
                             <constraint firstItem="ycv-Il-v3J" firstAttribute="leading" secondItem="vWd-Q7-3U7" secondAttribute="leading" constant="57" id="XJW-IJ-6EZ"/>
                             <constraint firstItem="ycv-Il-v3J" firstAttribute="top" secondItem="0fw-sD-i0r" secondAttribute="bottom" constant="116" id="YOL-8X-iA9"/>
                             <constraint firstItem="ycv-Il-v3J" firstAttribute="top" secondItem="cmc-OY-0mO" secondAttribute="bottom" constant="41" id="YR7-5K-Mvj"/>
