@@ -19,7 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-  
+    self.reset.layer.cornerRadius=20;
+    self.reset.clipsToBounds=true;
+    self.Calculate.layer.cornerRadius=20;
+    self.Calculate.clipsToBounds=true;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,6 +32,7 @@
 
 #pragma mark - Button Action method for calculation
 - (IBAction)Calculate:(id)sender {
+    [self showMessage];
     
     NSString *str = _textOne.text;
     
@@ -108,8 +112,27 @@
     float result3 = result2/1000;// result2 converted into microfarads
     self.textFour.text = [NSString stringWithFormat:@"%f",result3];//result3 prints into text field four
     }
+#pragma mark - Warning for empty text field
 
+-(void)showMessage{
 
+    if ([self.textOne.text isEqualToString:@""]){
+    UIAlertController * warning =   [UIAlertController
+                                  alertControllerWithTitle:@"Warning!"
+                        
+                                  message:@"Please Enter 3 Digits Capacitor Code"
+                                  preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){// This code is adapted from https://stackoverflow.com/questions/32690086/uialertview-first-deprecated-ios-9
+        
+        //do something when click button
+        return ;}];
+    [warning addAction:okAction];
+    UIViewController *vc = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+        
+    [vc presentViewController:warning animated:YES completion:nil];
+}
+}
 #pragma mark - Button Action method to clean all textfeild
 
 - (IBAction)Reset:(id)sender {// to reset all the text fields to NULL
@@ -123,7 +146,7 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     // These lines of code are adapted from https://stackoverflow.com/questions/6178638/uitextfield-delegate
     
-    [textField resignFirstResponder];
+    [_textOne resignFirstResponder];
    
     return YES;
 }

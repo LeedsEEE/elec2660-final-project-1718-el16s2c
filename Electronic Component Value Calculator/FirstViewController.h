@@ -24,8 +24,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *capacitorImage;
 - (IBAction)Reset:(id)sender;
 
-
-
+@property (weak, nonatomic) IBOutlet UIButton *reset;
+@property (weak, nonatomic) IBOutlet UIButton *Calculate;
 
 
 @end

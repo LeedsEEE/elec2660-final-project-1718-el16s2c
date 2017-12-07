@@ -23,13 +23,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSString *path2 = [NSString stringWithFormat:@"%@/Wrong Buzzer1.wav", [[NSBundle mainBundle] resourcePath] ];
+    NSString *path2 = [NSString stringWithFormat:@"%@/Wrong Buzzer1.wav", [[NSBundle mainBundle] resourcePath] ];// open up paths for the audio sound
     NSURL *soundUrl2 = [NSURL fileURLWithPath:path2];
-    _audioPlayer2 = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl2 error:nil];
+    _audioPlayer2 = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl2 error:nil];//This line of code is based on https://stackoverflow.com/questions/12557605/playing-music-within-app
+    
     
     NSString *pathTwo = [NSString stringWithFormat:@"%@/Correct.wav", [[NSBundle mainBundle] resourcePath] ];
     NSURL *soundUrl21 = [NSURL fileURLWithPath:pathTwo];
-    _audioPlayer21 = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl21 error:nil];
+    _audioPlayer21 = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl21 error:nil];//This line of code is based on https://stackoverflow.com/questions/12557605/playing-music-within-app
+    
 }
 
 
@@ -41,24 +43,24 @@
 
 
 -(IBAction)buttonA2:(id)sender{
-    _Answer2.text = @"Wrong! Answer";
-    _Answer2.textColor = [UIColor redColor];
-    [_audioPlayer2 play];
+    _Answer2.text = @"Wrong! Answer";// displays the wrong answer in the label
+    _Answer2.textColor = [UIColor redColor];// colour of the answer text
+    [_audioPlayer2 play];//plays buzzer
 }
 -(IBAction)buttonB2:(id)sender{
-    _Answer2.text = @"Wrong! Answer";
-    _Answer2.textColor = [UIColor redColor];
-    [_audioPlayer2 play];
+    _Answer2.text = @"Wrong! Answer";// displays the wrong answer in the label
+    _Answer2.textColor = [UIColor redColor];// colour of the answer text
+    [_audioPlayer2 play];//plays buzzer
 }
 -(IBAction)buttonC2:(id)sender{
-    _Answer2.text = @"Correct! Answer";
-    _Answer2.textColor = [UIColor blueColor];
-    [_audioPlayer21 play];
+    _Answer2.text = @"Correct! Answer";// displays the correct answer in the label
+    _Answer2.textColor = [UIColor blueColor];// colour of the answer text
+    [_audioPlayer21 play];//plays audio
 }
 -(IBAction)buttonD2:(id)sender{
-    _Answer2.text = @"Wrong! Answer";
-    _Answer2.textColor = [UIColor redColor];
-    [_audioPlayer2 play];
+    _Answer2.text = @"Wrong! Answer";// displays the wrong answer in the label
+    _Answer2.textColor = [UIColor redColor];// colour of the answer text
+    [_audioPlayer2 play];//plays buzzer
 }
 /*
  #pragma mark - Navigation

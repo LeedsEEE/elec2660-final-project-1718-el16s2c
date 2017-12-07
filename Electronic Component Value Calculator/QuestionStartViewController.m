@@ -34,6 +34,7 @@
 }
 */
 
-- (IBAction)start:(id)sender {
-}
+
 @end
+//Reference
+//background image for quiz is taken from https://www.freepik.com/free-vector/quiz-background-with-hand-holding-a-sign_1022622.htm

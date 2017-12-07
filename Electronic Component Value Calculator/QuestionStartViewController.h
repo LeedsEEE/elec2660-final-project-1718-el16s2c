@@ -13,7 +13,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 
 
-- (IBAction)start:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *start;
+
 
 
 @end

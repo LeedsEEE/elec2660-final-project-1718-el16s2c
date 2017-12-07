@@ -21,7 +21,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib
 }
-// 1st band
+
+#pragma mark - Button Action method for colour
+// 1st band colours of inductor
 - (IBAction)Black:(id)sender {
     display.text = [NSString stringWithFormat:@"%@0",display.text];
 }
@@ -64,8 +66,8 @@
     display.text = [NSString stringWithFormat:@"%@9",display.text];
 }
 
-
-// 2nd band
+#pragma mark - Button Action method for colour in second band
+// 2nd band colours of inductor
 - (IBAction)Black1:(id)sender {
     display.text = [NSString stringWithFormat:@"%@0",display.text];
 }
@@ -108,8 +110,8 @@
     display.text = [NSString stringWithFormat:@"%@9",display.text];
 }
 
-
-//multipliers
+#pragma mark - Button Action method for Multiplier
+//3rd band colours (multipliers)
 
 - (IBAction)multiplierOne:(id)sender{
       display.text = [NSString stringWithFormat:@"%@μH",display.text];
@@ -130,7 +132,7 @@
 - (IBAction)multiplierFive:(id)sender {
    display.text = [NSString stringWithFormat:@"%@00000μH",display.text];
 }
-
+#pragma mark - Button Action method for tolerance
 //tolerance
 - (IBAction)tolerance1:(id)sender {
      display.text = [NSString stringWithFormat:@"%@±20%%",display.text];
@@ -166,7 +168,7 @@
     display.text = [NSString stringWithFormat:@"%@±10%%",display.text];
 }
 
-
+#pragma mark - Button Action method to clear the text feild
 // reset
 
 - (IBAction)Clear:(id)sender {
@@ -184,3 +186,5 @@
 }
 
 @end
+// Reference
+// inductor image is taken from

@@ -9,8 +9,8 @@
 #import "Question1ViewController.h"
 @interface Question1ViewController ()
 {
-    AVAudioPlayer *_audioPlayer;
-     AVAudioPlayer *_audioPlayer1;
+    AVAudioPlayer *_audioPlayer;//assigning -audioPlayer into AVAudioPlayer
+     AVAudioPlayer *_audioPlayer1;//assigning -audioPlayer1 into AVAudioPlayer
 }
 @end
 
@@ -20,13 +20,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    NSString *path = [NSString stringWithFormat:@"%@/Wrong Buzzer1.wav", [[NSBundle mainBundle] resourcePath] ];
+    NSString *path = [NSString stringWithFormat:@"%@/Wrong Buzzer1.wav", [[NSBundle mainBundle] resourcePath] ];// open up path for the audio sound
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
     _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    //This line of code is based on https://stackoverflow.com/questions/12557605/playing-music-within-app
     
     NSString *pathOne = [NSString stringWithFormat:@"%@/Correct.wav", [[NSBundle mainBundle] resourcePath] ];
     NSURL *soundUrl1 = [NSURL fileURLWithPath:pathOne];
     _audioPlayer1 = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl1 error:nil];
+    //This line of code is based on https://stackoverflow.com/questions/12557605/playing-music-within-app
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,27 +36,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+#pragma mark - Button Action methods
 -(IBAction)buttonA:(id)sender{
-    _Answer.text = @"Wrong! Answer";
-    _Answer.textColor = [UIColor redColor];
-    [_audioPlayer play];
+    _Answer.text = @"Wrong! Answer";// displays the wrong answer in the label
+    _Answer.textColor = [UIColor redColor];// colour of the answer text
+    [_audioPlayer play];//plays buzzer
     
 }
 -(IBAction)buttonB:(id)sender{
-    _Answer.text = @"Wrong! Answer";
-    _Answer.textColor = [UIColor redColor];
-    [_audioPlayer play];
+    _Answer.text = @"Wrong! Answer";// displays the wrong answer in the label
+    _Answer.textColor = [UIColor redColor];// colour of the answer text
+    [_audioPlayer play];//plays buzzer
 }
 -(IBAction)buttonC:(id)sender{
-    _Answer.text = @"Correct! Answer";
-    _Answer.textColor = [UIColor blueColor];
-    [_audioPlayer1 play];
+    _Answer.text = @"Correct! Answer";// displays the correct answer in the label
+    _Answer.textColor = [UIColor blueColor];// colour of the answer text
+    [_audioPlayer1 play];//plays buzzer
 }
 -(IBAction)buttonD:(id)sender{
-    _Answer.text = @"Wrong! Answer";
-    _Answer.textColor = [UIColor redColor];
-    [_audioPlayer play];
+    _Answer.text = @"Wrong! Answer";// displays the wrong answer in the label
+    _Answer.textColor = [UIColor redColor];// colour of the answer text
+    [_audioPlayer play];//plays buzzer
 }
 /*
 #pragma mark - Navigation
@@ -67,3 +69,7 @@
 */
 
 @end
+
+// further Reference
+// circuit image is taken from https://www.indiabix.com/electronic-devices/oscillator-circuits/127002
+// audio sounds are adapted from 
