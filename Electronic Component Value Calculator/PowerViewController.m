@@ -18,8 +18,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-
-    
     self.Current.delegate = self;
     self.Current.tag = 0;
     
@@ -38,48 +36,36 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
 -(double) activePower
 {
-    double ActPower = ((pow((self.I),2))*(self.R)); //res = pow(5.0,2.0); //25
+    double ActPower = ((pow((self.I),2))*(self.R)); // to store the active power equation in order to use in the calcuation
     
     return ActPower;
-    
 }
-
 -(double) reactivePower
 {
-   
-    double RecPower = ((pow((self.I),2))*(self.X)); //res = pow(5.0,2.0); //25
+    double RecPower = ((pow((self.I),2))*(self.X)); // to store the reactive power equation in order to use in the calcuation
     
     return RecPower;
-    
 }
 
 -(double) apparentPower
 {
-    
-    double AppPower = ((pow((self.I),2))*(self.Z)); //res = pow(5.0,2.0); //25
+    double AppPower = ((pow((self.I),2))*(self.Z)); // to store the apparent power equation in order to use in the calcuation
     
     return AppPower;
     
 }
-
-
-- (IBAction)reset:(UIButton *)sender {
-    
-    
-    
+#pragma mark Action Button to clear all text fileds
+- (IBAction)reset:(UIButton *)sender {// makes empty the all text fields
     self.Current.text = NULL;
     self.Reactance.text = NULL;
     self.Impedance.text = NULL;
     self.Resistance.text = NULL;
 }
-
+#pragma mark Action Button to calculate
 
 - (IBAction)calculate:(UIButton *)sender {
-    
     
     double current  =  self.I = [self.Current.text doubleValue];
     double reactance   =  self.X = [self.Reactance.text doubleValue];
@@ -88,15 +74,14 @@
     
 
     double ActiPow = [self activePower];
-    self.ActivePower.text=[[NSString alloc]initWithFormat:@"Active Power = %.2fW",ActiPow];
+    self.ActivePower.text=[[NSString alloc]initWithFormat:@"Active Power = %.4fW",ActiPow];// displays the calculated active power in text field 4 decimal
     
     double RectPow =[self reactivePower];
-    self.ReactivePower.text=[[NSString alloc]initWithFormat:@"Recative Power = %.2fVAR",RectPow];
+    self.ReactivePower.text=[[NSString alloc]initWithFormat:@"Recative Power = %.4fVAR",RectPow];// displays the calculated reactive power in text field 4 decimal
     
     double AppaPow =[self apparentPower];
-    self.ApparentPower.text=[[NSString alloc]initWithFormat:@"Apparent Power = %.2fV/A",AppaPow];
+    self.ApparentPower.text=[[NSString alloc]initWithFormat:@"Apparent Power = %.4fV/A",AppaPow];// displays the calculated apparent power in text field 4 decimal
 }
-
 
 #pragma mark Text Field Delegate Methods
 

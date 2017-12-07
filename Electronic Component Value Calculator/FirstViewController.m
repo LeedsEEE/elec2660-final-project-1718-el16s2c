@@ -27,36 +27,40 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+#pragma mark - Button Action method for calculation
 - (IBAction)Calculate:(id)sender {
     
     NSString *str = _textOne.text;
     
     if([str length] == 0) {
-        return;
-    }
-    
+     return;
+     }// checks the text field One vaule
+     else if ([str length] == 1) {
+     return;// checks the text field One vaule
+     }
+     else if ([str length] == 2) {
+         return;// checks the text field One vaule
+     }
     NSString *value = [str substringWithRange:NSMakeRange(0,2)];
-    
+    // value is within the substring, it takes 0 to 2 of capacitor code
     NSString *multiplier= [str substringWithRange:NSMakeRange(2,1)];
-    
-    
-    int NumberValue = [value intValue];
-    float MultiplierNumber = [multiplier intValue];
+    // This above two lines of codes are adapted from https://stackoverflow.com/questions/5676106/how-to-get-substring-of-nsstring
+    int NumberValue = [value intValue];// Assigning the NumberValue as integer
+    float MultiplierNumber = [multiplier intValue];// Assigning the MultiplierNumber as float
     
    
     
     NSLog(@"%@", [NSString stringWithFormat:@"value = %ld, multiplier = %ld", (long)NumberValue, (long)MultiplierNumber]);
 
     
-    if (MultiplierNumber == 0)
+    if (MultiplierNumber == 0)// if statement is used to check the Multiplier Number (third digit)
     {
-        MultiplierNumber = 1;
+        MultiplierNumber = 1; // multiply by 1
         
     }
-    else  if (MultiplierNumber == 1)
+    else  if (MultiplierNumber == 1) // to check the Multiplier Number
     {
-        MultiplierNumber = 10;
+        MultiplierNumber = 10;// multiply by 2
         
     }
     else  if (MultiplierNumber == 2)
@@ -97,25 +101,35 @@
     }
     
     
-    float result = NumberValue*MultiplierNumber;
-    self.textTwo.text = [NSString stringWithFormat:@"%.4f",result];
-    float result2 = result/1000;
-    self.textThree.text = [NSString stringWithFormat:@"%.4f",result2];
-    float result3 = result2/1000;
-    self.textFour.text = [NSString stringWithFormat:@"%f",result3];
+    float result = NumberValue*MultiplierNumber;// multiplies both NuberValue and multiplier leaves the results as float value
+    self.textTwo.text = [NSString stringWithFormat:@"%.4f",result];//results prints into text field two
+    float result2 = result/1000;// the result converted into nanofarads
+    self.textThree.text = [NSString stringWithFormat:@"%.4f",result2];//results prints into text field three
+    float result3 = result2/1000;// result2 converted into microfarads
+    self.textFour.text = [NSString stringWithFormat:@"%f",result3];//result3 prints into text field four
     }
 
 
-- (IBAction)Reset:(id)sender {
-    //self.Reset.layer.cornerRadius = 5.0 ;
- 
+#pragma mark - Button Action method to clean all textfeild
+
+- (IBAction)Reset:(id)sender {// to reset all the text fields to NULL
     self.textOne.text = NULL;
     self.textTwo.text = NULL;
     self.textThree.text = NULL;
     self.textFour.text = NULL;
     
 }
-
-
+#pragma mark Text Field Delegate method
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    // These lines of code are adapted from https://stackoverflow.com/questions/6178638/uitextfield-delegate
+    
+    [textField resignFirstResponder];
+   
+    return YES;
+}
 
 @end
+// Further References
+
+// capacitor image has taken from http://www.eresearchlab.com/product/0-001uf-102-ceramic-capacitor-5-pieces-pack/
+// capacitor icon has taken from http://www.iconbeast.com/free/

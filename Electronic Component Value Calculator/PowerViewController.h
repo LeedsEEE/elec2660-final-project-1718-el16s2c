@@ -24,29 +24,26 @@
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *ImageView;
-
+// outlet textfiled
 @property (weak, nonatomic) IBOutlet UITextField *Current;
 @property (weak, nonatomic) IBOutlet UITextField *Reactance;
 @property (weak, nonatomic) IBOutlet UITextField *Impedance;
 @property (weak, nonatomic) IBOutlet UITextField *Resistance;
-
+// outlet labels
 @property (weak, nonatomic) IBOutlet UILabel *ActivePower;
 @property (weak, nonatomic) IBOutlet UILabel *ReactivePower;
 @property (weak, nonatomic) IBOutlet UILabel *ApparentPower;
 
-
+// outlet labels
 @property (weak, nonatomic) IBOutlet UILabel *CurrentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ReactanceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ImpedanceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ResistanceLabel;
+// Action buttons
 - (IBAction)calculate:(UIButton *)sender;
 - (IBAction)reset:(UIButton *)sender;
 
-
-
-
-
-
+@property float cnt;
 @end
 
 

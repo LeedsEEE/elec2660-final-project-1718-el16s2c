@@ -25,7 +25,6 @@
 		41C118601FD0D743007958BE /* quiz-background-with-hand-holding-a-sign_23-2147593100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41C1185F1FD0D741007958BE /* quiz-background-with-hand-holding-a-sign_23-2147593100.jpg */; };
 		41C118661FD32341007958BE /* Correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41C118651FD32340007958BE /* Correct.wav */; };
 		41C1186F1FD33A4C007958BE /* 351566__bertrof__game-sound-correct-organic-violin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41C1186E1FD33A4B007958BE /* 351566__bertrof__game-sound-correct-organic-violin.wav */; };
-		41C118711FD33BB4007958BE /* Wrong Buzzer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41C118701FD33BB4007958BE /* Wrong Buzzer.wav */; };
 		41C118731FD33C20007958BE /* Wrong Buzzer1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41C118721FD33C20007958BE /* Wrong Buzzer1.wav */; };
 		41C118761FD33CD7007958BE /* Question2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C118751FD33CD7007958BE /* Question2ViewController.m */; };
 		41C118791FD33CEF007958BE /* Question3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C118781FD33CEF007958BE /* Question3ViewController.m */; };
@@ -70,6 +69,7 @@
 		412986EE1FD485C90005353A /* CurrentWave2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CurrentWave2.png; sourceTree = "<group>"; };
 		412986F01FD485EB0005353A /* CurrentWave3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CurrentWave3.png; sourceTree = "<group>"; };
 		412986F21FD486560005353A /* CurrentWave4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CurrentWave4.png; sourceTree = "<group>"; };
+		41339A781FD846AA00DD145B /* Wrong Buzzer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Wrong Buzzer.wav"; sourceTree = "<group>"; };
 		41A99BCD1FC56455003CA14D /* PowerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PowerViewController.h; sourceTree = "<group>"; };
 		41A99BCE1FC56455003CA14D /* PowerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowerViewController.m; sourceTree = "<group>"; };
 		41A99BD71FC56FEF003CA14D /* power.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = power.png; sourceTree = "<group>"; };
@@ -86,7 +86,6 @@
 		41C118681FD3332E007958BE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		41C118691FD3336D007958BE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		41C1186E1FD33A4B007958BE /* 351566__bertrof__game-sound-correct-organic-violin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "351566__bertrof__game-sound-correct-organic-violin.wav"; sourceTree = "<group>"; };
-		41C118701FD33BB4007958BE /* Wrong Buzzer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Wrong Buzzer.wav"; path = "../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Wrong Buzzer1/Wrong Buzzer.wav"; sourceTree = "<group>"; };
 		41C118721FD33C20007958BE /* Wrong Buzzer1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Wrong Buzzer1.wav"; sourceTree = "<group>"; };
 		41C118741FD33CD7007958BE /* Question2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question2ViewController.h; sourceTree = "<group>"; };
 		41C118751FD33CD7007958BE /* Question2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question2ViewController.m; sourceTree = "<group>"; };
@@ -156,6 +155,43 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		41339A761FD8445400DD145B /* Background images */ = {
+			isa = PBXGroup;
+			children = (
+				41CED41B1FC2F68C0056C1C3 /* 1.jpg */,
+				41DB7A351FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg */,
+				410753511FCB1EAE007312D4 /* FRHDMDSH2WETZLI.MEDIUM.jpg */,
+				41CED45E1FC479E30056C1C3 /* 9.jpg */,
+				41A99BD71FC56FEF003CA14D /* power.png */,
+			);
+			path = "Background images";
+			sourceTree = "<group>";
+		};
+		41339A771FD8469400DD145B /* App Buzzer */ = {
+			isa = PBXGroup;
+			children = (
+				41C118721FD33C20007958BE /* Wrong Buzzer1.wav */,
+				41C118651FD32340007958BE /* Correct.wav */,
+				41C1186E1FD33A4B007958BE /* 351566__bertrof__game-sound-correct-organic-violin.wav */,
+				41339A781FD846AA00DD145B /* Wrong Buzzer.wav */,
+			);
+			path = "App Buzzer";
+			sourceTree = "<group>";
+		};
+		419F0D811FD951E200ED5F1D /* Quiz images */ = {
+			isa = PBXGroup;
+			children = (
+				412986EA1FD46D420005353A /* QuidRLC2.png */,
+				41C1185F1FD0D741007958BE /* quiz-background-with-hand-holding-a-sign_23-2147593100.jpg */,
+				412986F01FD485EB0005353A /* CurrentWave3.png */,
+				412986EE1FD485C90005353A /* CurrentWave2.png */,
+				412986EC1FD4857F0005353A /* CurrentWave1.png */,
+				412986F21FD486560005353A /* CurrentWave4.png */,
+				412986E01FD459B60005353A /* quizRLC.png */,
+			);
+			path = "Quiz images";
+			sourceTree = "<group>";
+		};
 		41C118671FD3332D007958BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +234,7 @@
 				41A99BCD1FC56455003CA14D /* PowerViewController.h */,
 				41A99BCE1FC56455003CA14D /* PowerViewController.m */,
 				41FDCE671FBCA50E0013DFC4 /* Main.storyboard */,
+				41FDCE6C1FBCA50E0013DFC4 /* LaunchScreen.storyboard */,
 				41C1185A1FCDE8EB007958BE /* Question1ViewController.h */,
 				41C1185B1FCDE8EB007958BE /* Question1ViewController.m */,
 				41C118741FD33CD7007958BE /* Question2ViewController.h */,
@@ -211,24 +248,10 @@
 				41C1187D1FD33D89007958BE /* QuestionEndViewController.h */,
 				41C1187E1FD33D89007958BE /* QuestionEndViewController.m */,
 				41FDCE6A1FBCA50E0013DFC4 /* Assets.xcassets */,
-				41DB7A351FC0721A00DA8F1C /* 001uf-50v-ceramic-capacitors.jpeg */,
-				41CED41B1FC2F68C0056C1C3 /* 1.jpg */,
-				41FDCE6C1FBCA50E0013DFC4 /* LaunchScreen.storyboard */,
+				419F0D811FD951E200ED5F1D /* Quiz images */,
 				41339A751FD8316900DD145B /* App Icons */,
-				412986E01FD459B60005353A /* quizRLC.png */,
-				412986EA1FD46D420005353A /* QuidRLC2.png */,
-				412986F01FD485EB0005353A /* CurrentWave3.png */,
-				412986EE1FD485C90005353A /* CurrentWave2.png */,
-				412986EC1FD4857F0005353A /* CurrentWave1.png */,
-				412986F21FD486560005353A /* CurrentWave4.png */,
-				41C118701FD33BB4007958BE /* Wrong Buzzer.wav */,
-				41C118721FD33C20007958BE /* Wrong Buzzer1.wav */,
-				41C118651FD32340007958BE /* Correct.wav */,
-				41C1185F1FD0D741007958BE /* quiz-background-with-hand-holding-a-sign_23-2147593100.jpg */,
-				41C1186E1FD33A4B007958BE /* 351566__bertrof__game-sound-correct-organic-violin.wav */,
-				41A99BD71FC56FEF003CA14D /* power.png */,
-				410753511FCB1EAE007312D4 /* FRHDMDSH2WETZLI.MEDIUM.jpg */,
-				41CED45E1FC479E30056C1C3 /* 9.jpg */,
+				41339A761FD8445400DD145B /* Background images */,
+				41339A771FD8469400DD145B /* App Buzzer */,
 				41FDCE6F1FBCA50E0013DFC4 /* Info.plist */,
 				41FDCE701FBCA50E0013DFC4 /* main.m */,
 			);
@@ -381,7 +404,6 @@
 				41FDCE691FBCA50E0013DFC4 /* Main.storyboard in Resources */,
 				412986EB1FD46D450005353A /* QuidRLC2.png in Resources */,
 				41C118731FD33C20007958BE /* Wrong Buzzer1.wav in Resources */,
-				41C118711FD33BB4007958BE /* Wrong Buzzer.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

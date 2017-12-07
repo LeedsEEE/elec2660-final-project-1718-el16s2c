@@ -29,8 +29,6 @@
     _audioPlayer1 = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl1 error:nil];
 }
 
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
