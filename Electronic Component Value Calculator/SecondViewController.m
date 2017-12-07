@@ -188,8 +188,7 @@
     display.text = [NSString stringWithFormat:@"%@±10%%",display.text];
 }
 
-#pragma mark - Button Action method to clear the text feild
-// reset
+
 
 - (IBAction)Clear:(id)sender {
     display.text = @"";
