@@ -948,7 +948,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycv-Il-v3J">
                                 <rect key="frame" x="57" y="280" width="155" height="24"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.41443586770000002" green="0.88356236939999999" blue="0.97087166879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="bch-xv-lkU"/>
                                 </constraints>
@@ -1039,6 +1039,7 @@
                     </view>
                     <connections>
                         <outlet property="Answer" destination="cmc-OY-0mO" id="QL6-Nw-Aki"/>
+                        <outlet property="buttonA" destination="ycv-Il-v3J" id="gCn-as-zow"/>
                         <outlet property="questionLabel" destination="iVm-FI-HDa" id="4sO-VF-E4Q"/>
                         <outlet property="questionLabel1" destination="0fw-sD-i0r" id="dJI-lq-yzT"/>
                     </connections>

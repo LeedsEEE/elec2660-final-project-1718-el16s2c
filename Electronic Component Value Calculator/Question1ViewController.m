@@ -11,6 +11,7 @@
 {
     AVAudioPlayer *_audioPlayer;//assigning -audioPlayer into AVAudioPlayer
      AVAudioPlayer *_audioPlayer1;//assigning -audioPlayer1 into AVAudioPlayer
+    
 }
 @end
 
@@ -19,7 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    self.buttonA.layer.cornerRadius=20;
+    self.buttonA.clipsToBounds=true;
+    
     NSString *path = [NSString stringWithFormat:@"%@/Wrong Buzzer1.wav", [[NSBundle mainBundle] resourcePath] ];// open up path for the audio sound
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
     _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];

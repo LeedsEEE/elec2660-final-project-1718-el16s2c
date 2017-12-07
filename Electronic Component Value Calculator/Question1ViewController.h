@@ -17,5 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *questionLabel1;
 
 @property (weak,nonatomic) IBOutlet UILabel  *Answer;
+@property (weak, nonatomic) IBOutlet UIButton *buttonA;
+
 
 @end
