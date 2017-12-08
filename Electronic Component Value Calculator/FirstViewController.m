@@ -137,23 +137,26 @@
                                     [vc presentViewController:warning animated:YES completion:nil];}
 
 
-else if ([textNew length] == 2)     {
+    else if ([textNew length] == 2) {
     
-UIAlertController * warning     =   [UIAlertController
+    UIAlertController * warning =   [UIAlertController
                                     alertControllerWithTitle:@"Warning!"
                                     message:@"Please Enter 3 Digits Capacitor Code"
                                     preferredStyle:UIAlertControllerStyleAlert];
                                     // displays the warning message in the screen
 
-UIAlertAction *okAction         =    [UIAlertAction actionWithTitle:@"OK"
+    UIAlertAction *okAction     =    [UIAlertAction actionWithTitle:@"OK"
                                      style:UIAlertActionStyleDefault
                                      handler:^(UIAlertAction *action){
-                                     return ;}]; 
+                                     return ;}];
+        
+        
+                                    [warning addAction:okAction];
+    UIViewController *vc        =   [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+                                    [vc presentViewController:warning animated:YES completion:nil];}
 
-[warning addAction:okAction];
-UIViewController *vc        =   [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-[vc presentViewController:warning animated:YES completion:nil];}
-}
+
+    }
 
 #pragma mark - Button Action method to clean all textfeild
 
