@@ -42,6 +42,8 @@
 // Action buttons
 - (IBAction)calculate:(UIButton *)sender;
 - (IBAction)reset:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *calculate;
+@property (weak, nonatomic) IBOutlet UIButton *reset;
 
 
 @end
