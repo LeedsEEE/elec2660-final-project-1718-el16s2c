@@ -118,20 +118,21 @@
 
     
     UIAlertController * warning =   [UIAlertController
-                                  alertControllerWithTitle:@"Warning!"
-                        
-                                  message:@"Please Enter 3 Digits Capacitor Code"
-                                  preferredStyle:UIAlertControllerStyleAlert];
+                                     alertControllerWithTitle:@"Warning!"
+                                     message:@"Please Enter 3 Digits Capacitor Code"
+                                     preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){// This code is adapted from https://stackoverflow.com/questions/32690086/uialertview-first-deprecated-ios-9
+    UIAlertAction *okAction =        [UIAlertAction actionWithTitle:@"OK"
+                                     style:UIAlertActionStyleDefault
+                                     handler:^(UIAlertAction *action){
+                                     return ;}];
+                                     // This line of code is adapted from https://stackoverflow.com/questions/32690086/uialertview-first-deprecated-ios-9
         
-        //do something when click button
-        return ;}];
-    [warning addAction:okAction];
-    UIViewController *vc = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-        
-    [vc presentViewController:warning animated:YES completion:nil];
-}
+
+                                    [warning addAction:okAction];
+    UIViewController *vc =          [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+                                    [vc presentViewController:warning animated:YES completion:nil];}
+
 
 #pragma mark - Button Action method to clean all textfeild
 
