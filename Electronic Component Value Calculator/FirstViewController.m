@@ -116,7 +116,7 @@
 
 -(void)showMessage{
 
-    if (self.textOne.text==NULL){
+   
     UIAlertController * warning =   [UIAlertController
                                      alertControllerWithTitle:@"Warning!"
                                      message:@"Please Enter 3 Digits Capacitor Code"
@@ -133,7 +133,7 @@
     UIViewController *vc =          [[[[UIApplication sharedApplication] delegate] window] rootViewController];
                                     [vc presentViewController:warning animated:YES completion:nil];}
 
-}
+
 #pragma mark - Button Action method to clean all textfeild
 
 - (IBAction)Reset:(id)sender {// to reset all the text fields to NULL
@@ -145,7 +145,7 @@
 }
 #pragma mark Text Field Delegate method
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    // These lines of code are adapted from https://stackoverflow.com/questions/6178638/uitextfield-delegate
+    // This line of code is adapted from https://stackoverflow.com/questions/6178638/uitextfield-delegate
     
     [_textOne resignFirstResponder];
    
