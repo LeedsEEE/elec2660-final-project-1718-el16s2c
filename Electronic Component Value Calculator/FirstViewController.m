@@ -118,7 +118,7 @@
 
 -(void)showMessage{
     NSString *textNew = _textOne.text;
-    if ([textNew length] == 0) {
+    if ([textNew length] <= 0) {
     
     UIAlertController * warning =   [UIAlertController
                                      alertControllerWithTitle:@"Warning!"
