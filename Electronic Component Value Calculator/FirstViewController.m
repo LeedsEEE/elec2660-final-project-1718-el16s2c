@@ -117,8 +117,9 @@
 #pragma mark - Warning Message for Empty Text Field
 
 -(void)showMessage{
-
-   
+    NSString *textNew = _textOne.text;
+    if ([textNew length] == 0) {
+    
     UIAlertController * warning =   [UIAlertController
                                      alertControllerWithTitle:@"Warning!"
                                      message:@"Please Enter 3 Digits Capacitor Code"
@@ -135,6 +136,24 @@
     UIViewController *vc        =   [[[[UIApplication sharedApplication] delegate] window] rootViewController];
                                     [vc presentViewController:warning animated:YES completion:nil];}
 
+
+else if ([textNew length] == 2){
+UIAlertController * warning =   [UIAlertController
+                                 alertControllerWithTitle:@"Warning!"
+                                 message:@"Please Enter 3 Digits Capacitor Code"
+                                 preferredStyle:UIAlertControllerStyleAlert];
+// displays the warning message in the screen
+
+UIAlertAction *okAction     =    [UIAlertAction actionWithTitle:@"OK"
+                                                          style:UIAlertActionStyleDefault
+                                                        handler:^(UIAlertAction *action){
+                                                            return ;}];
+// This line of code is adapted from https://stackoverflow.com/questions/32690086/uialertview-first-deprecated-ios-9
+
+[warning addAction:okAction];
+UIViewController *vc        =   [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+[vc presentViewController:warning animated:YES completion:nil];}
+}
 
 #pragma mark - Button Action method to clean all textfeild
 
