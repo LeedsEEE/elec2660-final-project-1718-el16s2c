@@ -30,25 +30,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Button Action method for calculation
+#pragma mark - Action Button method for calculation
+
 - (IBAction)Calculate:(id)sender {
     [self showMessage];
     
     NSString *str = _textOne.text;
     
-    if([str length] == 0) {
+    if([str length] == 0) {                 // checks the text field One vaule
      return;
-     }// checks the text field One vaule
+     }
      else if ([str length] == 1) {
-     return;// checks the text field One vaule
+     return;                                // checks the text field One vaule
      }
      else if ([str length] == 2) {
-         return;// checks the text field One vaule
+         return;                            // checks the text field One vaule
      }
-    NSString *value = [str substringWithRange:NSMakeRange(0,2)];
-    // value is within the substring, it takes 0 to 2 of capacitor code
-    NSString *multiplier= [str substringWithRange:NSMakeRange(2,1)];
-    // This above two lines of codes are adapted from https://stackoverflow.com/questions/5676106/how-to-get-substring-of-nsstring
+    
+    
+    NSString *value = [str substringWithRange:NSMakeRange(0,2)];    // value is within the substring, it takes 0 to 2 of capacitor code
+    NSString *multiplier= [str substringWithRange:NSMakeRange(2,1)];    // This above two lines of codes are adapted from https://stackoverflow.com/questions/5676106/how-to-get-substring-of-nsstring
     int NumberValue = [value intValue];// Assigning the NumberValue as integer
     float MultiplierNumber = [multiplier intValue];// Assigning the MultiplierNumber as float
     
@@ -112,6 +113,7 @@
     float result3 = result2/1000;// result2 converted into microfarads
     self.textFour.text = [NSString stringWithFormat:@"%f",result3];//result3 prints into text field four
     }
+
 #pragma mark - Warning Message for Empty Text Field
 
 -(void)showMessage{
@@ -128,7 +130,7 @@
                                      handler:^(UIAlertAction *action){
                                      return ;}];
                                      // This line of code is adapted from https://stackoverflow.com/questions/32690086/uialertview-first-deprecated-ios-9
-        
+    
                                     [warning addAction:okAction];
     UIViewController *vc        =   [[[[UIApplication sharedApplication] delegate] window] rootViewController];
                                     [vc presentViewController:warning animated:YES completion:nil];}
@@ -136,7 +138,7 @@
 
 #pragma mark - Button Action method to clean all textfeild
 
-- (IBAction)Reset:(id)sender {// to reset all the text fields to NULL
+- (IBAction)Reset:(id)sender {// To make empty all text fields
     self.textOne.text = NULL;
     self.textTwo.text = NULL;
     self.textThree.text = NULL;
@@ -148,7 +150,8 @@
     // This line of code is adapted from https://stackoverflow.com/questions/6178638/uitextfield-delegate
     
     [_textOne resignFirstResponder];
-   
+    // Removes the keyboard from the screen
+    
     return YES;
 }
 
