@@ -66,6 +66,7 @@
 #pragma mark Action Button to calculate
 
 - (IBAction)calculate:(UIButton *)sender {
+    [self showMessage];
     
     double current  =  self.I = [self.Current.text doubleValue];
     double reactance   =  self.X = [self.Reactance.text doubleValue];
@@ -82,25 +83,40 @@
     double AppaPow =[self apparentPower];
     self.ApparentPower.text=[[NSString alloc]initWithFormat:@"Apparent Power = %.4fV/A",AppaPow];// displays the calculated apparent power in text field 4 decimal
 }
+#pragma mark - Warning for empty text field
 
-#pragma mark Text Field Delegate Methods
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+-(void)showMessage{
     
-   //  http://stackoverflow.com/questions/1347779/how-to-navigate-through-textfields-next-done-buttons
-    
-    NSInteger nextTag = textField.tag + 1;
-    UIResponder* nextResponder = [textField.superview viewWithTag:nextTag];
-    if (nextResponder) {
+    if ([self.Current.text isEqualToString:@""]){
+        UIAlertController * warning =   [UIAlertController
+                                         alertControllerWithTitle:@"Warning!"
+                                         
+                                         message:@"Please Enter A Value for Current"
+                                         preferredStyle:UIAlertControllerStyleAlert];
         
-        [nextResponder becomeFirstResponder];
-    } else {
-    
-        [textField resignFirstResponder];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){// This code is adapted from https://stackoverflow.com/questions/32690086/uialertview-first-deprecated-ios-9
+            
+            //do something when click button
+            return ;}];
+        [warning addAction:okAction];
+        UIViewController *vc = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+        
+        [vc presentViewController:warning animated:YES completion:nil];
     }
-    return YES;
     
+}
 
+
+
+#pragma mark Text Field Delegate method
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    // These lines of code are adapted from https://stackoverflow.com/questions/6178638/uitextfield-delegate
+    
+    [_Current resignFirstResponder];
+    [_Reactance resignFirstResponder];
+    [_Impedance resignFirstResponder];
+    [_Resistance resignFirstResponder];
+    return YES;
 }
 
 @end

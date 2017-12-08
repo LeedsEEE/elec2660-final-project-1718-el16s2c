@@ -99,7 +99,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001uf-50v-ceramic-capacitors.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="7jD-ma-2PV">
-                                <rect key="frame" x="86" y="56" width="192" height="183"/>
+                                <rect key="frame" x="91" y="56" width="192" height="183"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Microfarads (uF)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2N-d0-xKm">
                                 <rect key="frame" x="34" y="453" width="136" height="20.5"/>
@@ -163,7 +163,7 @@
                             <constraint firstItem="quW-lA-dQu" firstAttribute="leading" secondItem="My5-6O-x1G" secondAttribute="leading" id="ZUg-8L-01a"/>
                             <constraint firstItem="quW-lA-dQu" firstAttribute="top" secondItem="7jD-ma-2PV" secondAttribute="bottom" constant="51" id="ZaL-lU-xbO"/>
                             <constraint firstItem="1tg-45-hyW" firstAttribute="baseline" secondItem="gYJ-xM-wHW" secondAttribute="firstBaseline" constant="1" id="aFL-nr-yYz"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="7jD-ma-2PV" secondAttribute="trailing" constant="97" id="baW-vo-zqV"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="7jD-ma-2PV" secondAttribute="trailing" constant="92" id="baW-vo-zqV"/>
                             <constraint firstItem="b1v-KW-Uoa" firstAttribute="centerY" secondItem="ARD-Uu-pix" secondAttribute="centerY" id="cUv-bL-fLK"/>
                             <constraint firstItem="7MG-Bk-APz" firstAttribute="height" secondItem="b1v-KW-Uoa" secondAttribute="height" id="gLw-Ig-A09"/>
                             <constraint firstItem="7MG-Bk-APz" firstAttribute="trailing" secondItem="0wM-FG-ZwX" secondAttribute="trailing" id="k0R-tX-3eK"/>
@@ -171,7 +171,7 @@
                             <constraint firstItem="b1v-KW-Uoa" firstAttribute="leading" secondItem="A2N-d0-xKm" secondAttribute="leading" id="nDa-7o-1SH"/>
                             <constraint firstItem="1tg-45-hyW" firstAttribute="top" secondItem="p2H-zy-VZH" secondAttribute="bottom" constant="42" id="ttj-dV-VIw"/>
                             <constraint firstItem="0wM-FG-ZwX" firstAttribute="centerY" secondItem="My5-6O-x1G" secondAttribute="centerY" id="v7x-7n-e6B"/>
-                            <constraint firstItem="7jD-ma-2PV" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="86" id="vqG-S5-X8w"/>
+                            <constraint firstItem="7jD-ma-2PV" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="91" id="vqG-S5-X8w"/>
                             <constraint firstItem="ARD-Uu-pix" firstAttribute="width" secondItem="p2H-zy-VZH" secondAttribute="width" id="wFI-TG-S5E"/>
                             <constraint firstItem="ARD-Uu-pix" firstAttribute="leading" secondItem="p2H-zy-VZH" secondAttribute="leading" id="xRY-Cu-uFG"/>
                             <constraint firstItem="7jD-ma-2PV" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="36" id="zJR-qV-STo"/>

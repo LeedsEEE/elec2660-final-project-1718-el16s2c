@@ -43,7 +43,7 @@
 - (IBAction)calculate:(UIButton *)sender;
 - (IBAction)reset:(UIButton *)sender;
 
-@property float cnt;
+
 @end
 
 
