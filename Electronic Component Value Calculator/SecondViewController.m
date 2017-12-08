@@ -156,7 +156,7 @@
 //tolerance
 - (IBAction)tolerance1:(id)sender {
      display.text = [NSString stringWithFormat:@"%@±20%%",display.text];
-}// tolerance
+}// shows tolerance with the inductor value
 
 - (IBAction)tolerance2:(id)sender {
     display.text = [NSString stringWithFormat:@"%@±1%%",display.text];
@@ -197,10 +197,9 @@
                                          
                                          message:@"Please Select 4 Colours From the Screen"
                                          preferredStyle:UIAlertControllerStyleAlert];
-        
+                                //displays the message in the screen
         UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){// This code is adapted from https://stackoverflow.com/questions/32690086/uialertview-first-deprecated-ios-9
-            
-            //do something when click button
+            //asks user to select the colours
             return ;}];
         [warning addAction:okAction];
         UIViewController *vc = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
@@ -210,13 +209,11 @@
 
 #pragma mark - Action Button to Delete All Input Data
 - (IBAction)Clear:(id)sender {
-    display.text = @"";
+    display.text = @"";//empty the text field
    
-    _Clear.layer.cornerRadius = 5;//need changing
+    _Clear.layer.cornerRadius = 5;//to make the round button
     _Clear.clipsToBounds = true;
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
