@@ -222,4 +222,5 @@
 
 @end
 // Reference
-// inductor image is taken from
+// inductor image is taken from https://msestores.com/product-category/inductors
+// inductor icon
