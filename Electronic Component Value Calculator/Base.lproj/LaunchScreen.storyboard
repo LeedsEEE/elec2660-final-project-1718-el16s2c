@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,22 +22,34 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mpx-99-Qqt">
                                 <rect key="frame" x="0.0" y="0.0" width="378" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  ELECTRONICS TOOLKIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bN9-Yv-YTu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELECTRONICS " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bN9-Yv-YTu">
                                 <rect key="frame" x="16" y="250" width="351" height="49"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="pE0-d8-5hM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="49"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        TOOLKIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIg-vL-oyO">
+                                <rect key="frame" x="8" y="299" width="351" height="49"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="49"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="WIg-vL-oyO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="3tN-Zp-Vuu"/>
                             <constraint firstItem="mpx-99-Qqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Zc-jB-3cw"/>
                             <constraint firstItem="mpx-99-Qqt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="Cx9-0a-q9U"/>
-                            <constraint firstItem="bN9-Yv-YTu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="D29-LB-Dto"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bN9-Yv-YTu" secondAttribute="bottom" constant="368" id="DqE-We-CRf"/>
+                            <constraint firstItem="WIg-vL-oyO" firstAttribute="top" secondItem="bN9-Yv-YTu" secondAttribute="bottom" id="Jth-Pc-eG7"/>
+                            <constraint firstItem="bN9-Yv-YTu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="P66-lA-Prs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mpx-99-Qqt" secondAttribute="trailing" constant="-3" id="TY5-ai-yYe"/>
-                            <constraint firstItem="bN9-Yv-YTu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="4" id="d3N-NU-7gb"/>
-                            <constraint firstItem="bN9-Yv-YTu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="g5f-Cr-TL9"/>
+                            <constraint firstItem="WIg-vL-oyO" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="Wem-1x-1bA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WIg-vL-oyO" secondAttribute="bottom" constant="319" id="cfc-pE-6gk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mpx-99-Qqt" secondAttribute="bottom" id="hfT-nY-v39"/>
+                            <constraint firstItem="bN9-Yv-YTu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="lAd-ea-u8w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bN9-Yv-YTu" secondAttribute="trailing" constant="8" id="r5K-ad-aZM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
