@@ -105,14 +105,14 @@
     }
     
     
-    float result = NumberValue*MultiplierNumber;// multiplies both NuberValue and multiplier leaves the results as float value
+    float result = NumberValue*MultiplierNumber;// multiplies both NuberValue and multiplier
     self.textTwo.text = [NSString stringWithFormat:@"%.4f",result];//results prints into text field two
     float result2 = result/1000;// the result converted into nanofarads
     self.textThree.text = [NSString stringWithFormat:@"%.4f",result2];//results prints into text field three
     float result3 = result2/1000;// result2 converted into microfarads
     self.textFour.text = [NSString stringWithFormat:@"%f",result3];//result3 prints into text field four
     }
-#pragma mark - Warning for empty text field
+#pragma mark - Warning Message for Empty Text Field
 
 -(void)showMessage{
 
