@@ -116,7 +116,7 @@
 
 -(void)showMessage{
 
-    if ([_textOne.text] == 0  ){
+    if (self.textOne.text==NULL){
     UIAlertController * warning =   [UIAlertController
                                      alertControllerWithTitle:@"Warning!"
                                      message:@"Please Enter 3 Digits Capacitor Code"
