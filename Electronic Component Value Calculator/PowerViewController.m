@@ -17,7 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    self.reset.layer.cornerRadius=20;
+    self.reset.clipsToBounds=true;
+    
+    self.calculate.layer.cornerRadius=20;
+    self.calculate.clipsToBounds=true;
+    
     self.Current.delegate = self;
     self.Current.tag = 0;
     

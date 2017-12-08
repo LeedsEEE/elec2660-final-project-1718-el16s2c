@@ -868,8 +868,11 @@
                         <constraints>
                             <constraint firstItem="jfS-vC-dXd" firstAttribute="top" secondItem="gbD-N7-gae" secondAttribute="top" constant="-20" id="0SU-VN-evz"/>
                             <constraint firstItem="jfS-vC-dXd" firstAttribute="centerX" secondItem="B6D-8i-Hs4" secondAttribute="centerX" constant="-4.5" id="7BO-ZW-xek"/>
+                            <constraint firstItem="gbD-N7-gae" firstAttribute="trailing" secondItem="j4i-89-LU0" secondAttribute="trailing" constant="16" id="7wj-oW-XRG"/>
                             <constraint firstItem="j4i-89-LU0" firstAttribute="trailing" secondItem="B6D-8i-Hs4" secondAttribute="trailingMargin" id="ILs-bt-AeL"/>
+                            <constraint firstItem="j4i-89-LU0" firstAttribute="top" secondItem="jfS-vC-dXd" secondAttribute="bottom" constant="-209" id="Rgb-Fd-3ga"/>
                             <constraint firstItem="j4i-89-LU0" firstAttribute="top" secondItem="gbD-N7-gae" secondAttribute="top" constant="438" id="Xg2-gQ-ZeL"/>
+                            <constraint firstItem="j4i-89-LU0" firstAttribute="leading" secondItem="gbD-N7-gae" secondAttribute="leading" constant="16" id="Xz1-Vh-Hwr"/>
                             <constraint firstItem="jfS-vC-dXd" firstAttribute="leading" secondItem="gbD-N7-gae" secondAttribute="leading" constant="67" id="fp7-AI-Y9I"/>
                             <constraint firstItem="gbD-N7-gae" firstAttribute="bottom" secondItem="jfS-vC-dXd" secondAttribute="bottom" id="gvE-Zr-PgW"/>
                             <constraint firstItem="j4i-89-LU0" firstAttribute="leading" secondItem="B6D-8i-Hs4" secondAttribute="leadingMargin" id="nxt-Nn-njD"/>

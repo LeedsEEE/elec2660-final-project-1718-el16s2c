@@ -156,7 +156,7 @@
 //tolerance
 - (IBAction)tolerance1:(id)sender {
      display.text = [NSString stringWithFormat:@"%@±20%%",display.text];
-}
+}// tolerance
 
 - (IBAction)tolerance2:(id)sender {
     display.text = [NSString stringWithFormat:@"%@±1%%",display.text];
@@ -188,7 +188,7 @@
     display.text = [NSString stringWithFormat:@"%@±10%%",display.text];
 }
 
-#pragma mark - Warning for empty text field
+#pragma mark - Warning Messages for empty text field
 
 -(void)showMessage{
     
@@ -208,7 +208,7 @@
         [vc presentViewController:warning animated:YES completion:nil];
     }
 
-
+#pragma mark - Action Button to Delete All Input Data
 - (IBAction)Clear:(id)sender {
     display.text = @"";
    
