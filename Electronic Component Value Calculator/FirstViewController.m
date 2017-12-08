@@ -209,7 +209,7 @@
     // This line of code is adapted from https://stackoverflow.com/questions/6178638/uitextfield-delegate
     
     [_textOne resignFirstResponder];
-    // Removes the keyboard from the screen
+    // Dismisses the keyboard from the screen
     
     return YES;
     }
