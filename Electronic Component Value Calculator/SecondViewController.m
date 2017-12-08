@@ -46,7 +46,7 @@
 // 1st band colours of inductor
 - (IBAction)Black:(id)sender {
     display.text = [NSString stringWithFormat:@"%@0",display.text];
-}
+}// prints values for 1st band
 
 - (IBAction)Brown:(id)sender {
     display.text = [NSString stringWithFormat:@"%@1",display.text];
@@ -223,4 +223,4 @@
 @end
 // Reference
 // inductor image is taken from https://msestores.com/product-category/inductors
-// inductor icon
+// inductor icon is taken from  http://www.iconbeast.com/free/
