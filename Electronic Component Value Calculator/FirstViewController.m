@@ -116,7 +116,7 @@
 
 -(void)showMessage{
 
-    if ([self.textOne.text isEqualToString:@""]){
+    
     UIAlertController * warning =   [UIAlertController
                                   alertControllerWithTitle:@"Warning!"
                         
@@ -132,7 +132,7 @@
         
     [vc presentViewController:warning animated:YES completion:nil];
 }
-}
+
 #pragma mark - Button Action method to clean all textfeild
 
 - (IBAction)Reset:(id)sender {// to reset all the text fields to NULL
