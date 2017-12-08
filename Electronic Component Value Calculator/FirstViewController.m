@@ -18,17 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
     self.reset.layer.cornerRadius=20;
     self.reset.clipsToBounds=true;
     self.Calculate.layer.cornerRadius=20;
     self.Calculate.clipsToBounds=true;
-}
+    }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
+    }
 
 #pragma mark - Action Button method for calculation
 
@@ -144,7 +144,7 @@
     self.textThree.text = NULL;
     self.textFour.text = NULL;
     
-}
+    }
 #pragma mark Text Field Delegate method
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     // This line of code is adapted from https://stackoverflow.com/questions/6178638/uitextfield-delegate
@@ -153,9 +153,9 @@
     // Removes the keyboard from the screen
     
     return YES;
-}
+    }
 
-@end
+    @end
 // Further References
 
 // capacitor image has taken from http://www.eresearchlab.com/product/0-001uf-102-ceramic-capacitor-5-pieces-pack/
