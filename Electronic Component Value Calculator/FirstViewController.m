@@ -58,14 +58,14 @@
     NSLog(@"%@", [NSString stringWithFormat:@"value = %ld, multiplier = %ld", (long)NumberValue, (long)MultiplierNumber]);
 
     
-    if (MultiplierNumber == 0)// if statement is used to check the Multiplier Number (third digit)
+    if (MultiplierNumber == 0)         // if statement is used to check the Multiplier Number (third digit)
     {
-        MultiplierNumber = 1; // multiply by 1
+        MultiplierNumber = 1;           // multiply by 1
         
     }
-    else  if (MultiplierNumber == 1) // to check the Multiplier Number
+    else  if (MultiplierNumber == 1)    // to check the Multiplier Number
     {
-        MultiplierNumber = 10;// multiply by 2
+        MultiplierNumber = 10;          // multiply by 2
         
     }
     else  if (MultiplierNumber == 2)
@@ -145,7 +145,9 @@
     self.textFour.text = NULL;
     
     }
+
 #pragma mark Text Field Delegate method
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     // This line of code is adapted from https://stackoverflow.com/questions/6178638/uitextfield-delegate
     
@@ -156,7 +158,7 @@
     }
 
     @end
-// Further References
 
+// Further References:
 // capacitor image has taken from http://www.eresearchlab.com/product/0-001uf-102-ceramic-capacitor-5-pieces-pack/
 // capacitor icon has taken from http://www.iconbeast.com/free/
